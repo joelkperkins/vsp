@@ -1,0 +1,46 @@
+
+@media screen and (orientation: landscape) {
+    .video {
+        width: 80%
+      }
+}
+
+@media screen and (orientation: portrait) and (max-height: 600px) {
+  .video {
+      width: 67%;
+    }
+}
+
+@media screen and (orientation: portrait) and (min-height: 600px) and (min-width: 375px) {
+  .video {
+      width: 90%;
+    }
+}
+
+@media screen and (orientation: portrait) and (min-height: 600px) {
+  .video {
+      width: 100%;
+    }
+}
+
+@media screen and (orientation: portrait) and (min-height: 700px) {
+  .video {
+      width: 100%;
+    }
+}
+
+@media screen and (orientation: portrait) and (min-height: 800px) {
+  .video {
+      width: 100%;
+    }
+}
+
+@media screen and (orientation: portrait) and (min-height: 800px) and (min-width: 400px) {
+  .video {
+      width: 100%;
+    }
+}
+
+.video {
+  margin: .3rem;
+}

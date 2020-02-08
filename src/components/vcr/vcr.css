@@ -1,0 +1,57 @@
+
+@media screen and (orientation: landscape) {
+    .vcr {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+        overflow: hidden;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    .vcr {
+        width: auto;
+        max-height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+        margin: .5rem auto;
+    }
+    .home {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 100%;
+    }
+    
+    .top {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .side-text-box {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center !important;
+      font-family: 'Titillium Web', sans-serif;
+      color: white;
+      padding-right: .5rem;
+    }
+
+    .img-1 {
+      margin: auto .3rem;
+      width: 13rem;
+      border-radius: 50% 0% 50% 0%;
+      padding-left: .5rem;
+    }
+}
+
+

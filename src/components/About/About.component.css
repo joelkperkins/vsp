@@ -1,0 +1,29 @@
+.about-img {
+  width: 13rem;
+  border-radius: 0% 50% 0% 50%;
+  margin: auto .3rem;
+  padding-right: .5rem;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
+}
+
+.top-box {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.name {
+  font-family: 'Titillium Web', sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}

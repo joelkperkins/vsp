@@ -1,0 +1,100 @@
+@media screen and (orientation: landscape) {
+    .orietation {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+        background-color: blue;
+      }
+}
+
+@media screen and (orientation: portrait) {
+    .orietation {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+        background-color: red;
+      }
+}
+
+@media screen and (orientation: landscape) {
+  .video {
+      width: 80%
+    }
+}
+
+@media screen and (orientation: portrait) and (max-height: 600px) {
+  .video {
+    width: 67%;
+  }
+} 
+
+@media screen and (orientation: portrait) and (min-height: 600px) and (min-width: 360px) and (max-width: 370) {
+  .control {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: none;
+  }
+}
+
+@media screen and (orientation: portrait) and (min-height: 600px) and (min-width: 375px) {
+  .control {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+/* .control {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  justify-content: space-evenly;
+} */
+
+
+
+
+
+
+
+
+@media screen and (orientation: portrait) and (min-height: 600px) {
+.video {
+    width: 100%;
+  }
+}
+
+@media screen and (orientation: portrait) and (min-height: 700px) {
+.video {
+    width: 100%;
+  }
+}
+
+@media screen and (orientation: portrait) and (min-height: 800px) {
+.video {
+    width: 100%;
+  }
+}
+
+@media screen and (orientation: portrait) and (min-height: 800px) and (min-width: 400px) {
+.video {
+    width: 100%;
+  }
+}
+
+.video {
+margin: .3rem;
+}
