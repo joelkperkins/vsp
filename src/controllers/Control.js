@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Redirect } from 'react-router-dom';
-import VCR from '../components/vcr/vcr.component'
+import Home from '../components/Home/Home.component'
 import video1 from '../assets/test.mp4'
 import video2 from '../assets/test.mp4'
 import video3 from '../assets/test.mp4'
@@ -32,13 +32,22 @@ class Control extends Component {
         this.state = {
             isMobile: isMobile(),
             isPortait: orietationCheck(),
-            currVideo: video1,
-            allVideos: [
-                video1,
-                // video2,
-                // video3
+            videos: [
+              {
+                title: 'Lorem Ipsum',
+                video: video1
+              },
+              {
+                title: 'Lorem Ipsum',
+                video: video2
+              },
+              {
+                title: 'Lorem Ipsum',
+                video: video3
+              }
             ],
-            currView: initialView()
+            currView: initialView(),
+
         }
     }
 
@@ -57,10 +66,9 @@ class Control extends Component {
                 <Redirect to="/home" />
               </Route>
               <Route path="/home" render={ () => 
-                <VCR 
+                <Home 
                   isMobile={this.state.isMobile}
-                  currVideo={this.state.currVideo}
-                  allVideos={this.state.allVideos}
+                  videos={this.state.videos}
                 />
               }/>
               <Route path='/info' render={ () => 

@@ -1,9 +1,9 @@
 import React from 'react';
-import Cassette from '../cassette/cassette.component';
-import './vcr.css'
+import VideoPlayer from './VideoPlayer/VideoPlayer.component';
+import './Home.component.css'
 import img1 from '../../assets/default_2.jpg'
 
-export default function VCR (props) {
+export default function Home (props) {
     return (
       <div className='home'>
         <div className='top'>
@@ -16,7 +16,7 @@ export default function VCR (props) {
           </div>
         </div>
         <div className="vcr">
-          <Cassette video={props.currVideo} />
+          <VideoPlayer videos={props.videos} />
         </div>
       </div>
     );
