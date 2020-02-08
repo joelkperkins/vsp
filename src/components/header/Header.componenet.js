@@ -15,7 +15,8 @@ export default function Header (props) {
   const Title = (props.isMobile) ? MobileTitle : DesktopTitle
   const mobileNav = (props.isMobile) ? 'mobile-nav' : 'nav'
   return (
-    <Accordion>
+    <div className='header-box'>
+      <Accordion>
     <Card>
       <Accordion.Toggle as={Card.Header} eventKey="0">
         <div className='header'>
@@ -43,5 +44,7 @@ export default function Header (props) {
       </Accordion.Collapse>
       </Card>
     </Accordion>
+    </div>
+    
   )
 }

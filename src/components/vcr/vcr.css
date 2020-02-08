@@ -11,47 +11,138 @@
     }
 }
 
-@media screen and (orientation: portrait) {
-    .vcr {
-        width: auto;
-        max-height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: black;
-        margin: .5rem auto;
-    }
-    .home {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-evenly;
-      height: 100%;
-    }
-    
-    .top {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-    }
+/* 
+* Pixel 2, Pixel 2 XL,, iphone 6/7/8, iphone 6/7/8 PLUS, iphone X
+*/
+@media screen and (orientation: portrait) and (min-height: 600px) and (min-width: 374px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+  }
+  .top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .side-text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center !important;
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    padding-right: .5rem;
+  }
 
-    .side-text-box {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      justify-content: center !important;
-      font-family: 'Titillium Web', sans-serif;
-      color: white;
-      padding-right: .5rem;
-    }
+  .img-1 {
+    margin: auto .3rem;
+    width: 13rem;
+    border-radius: 50% 0% 50% 0%;
+    padding-left: .5rem;
+  }
+  .vcr {
+    width: auto;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    margin: .5rem auto;
+  }
+}
 
-    .img-1 {
-      margin: auto .3rem;
-      width: 13rem;
-      border-radius: 50% 0% 50% 0%;
-      padding-left: .5rem;
-    }
+/* 
+* iphone 5
+*/
+@media screen and (orientation: portrait) and (max-height: 600px) and (max-width: 360px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    overflow: scroll;
+    padding-top: 7rem;
+  }
+  .top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .img-1 {
+    margin: auto .3rem;
+    width: 11rem;
+    border-radius: 50% 0% 50% 0%;
+    padding-left: .5rem;
+  }
+  .side-text-box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center !important;
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    padding-right: .5rem;
+  }
+  .vcr {
+    width: auto;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    margin: .5rem auto;
+  }
+}
+
+/* 
+* Galaxy S5
+*/
+@media screen and (orientation: portrait) and (min-height: 600px) and (max-width: 360px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+  }
+  .top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .img-1 {
+    margin: auto .3rem;
+    width: 11rem;
+    border-radius: 50% 0% 50% 0%;
+    padding-left: .5rem;
+  }
+  .side-text-box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center !important;
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    padding-right: .5rem;
+  }
+  .vcr {
+    width: auto;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    margin: .5rem auto;
+  }
 }
 
 

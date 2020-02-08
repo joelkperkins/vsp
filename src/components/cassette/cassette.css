@@ -11,36 +11,73 @@
     }
 }
 
-@media screen and (orientation: portrait) and (min-height: 600px) and (min-width: 375px) {
+@media screen and (orientation: portrait) and (min-height: 600px) and (min-width: 370px) {
   .video {
       width: 90%;
     }
 }
 
-@media screen and (orientation: portrait) and (min-height: 600px) {
+/* 
+* Galaxy S5
+*/
+@media screen and (orientation: portrait) and (min-height: 600px) and (max-width: 360px) {
   .video {
-      width: 100%;
-    }
+    width: 95%;
+  }
+  .video-box {
+    display: flex;
+    justify-content: center;
+  }
 }
 
-@media screen and (orientation: portrait) and (min-height: 700px) {
+/* 
+* iphone 5
+*/
+@media screen and (orientation: portrait) and (max-height: 600px) and (max-width: 360px){
   .video {
-      width: 100%;
-    }
+    width: 95%;
+  }
+  .video-box {
+    display: flex;
+    justify-content: center;
+  }
 }
 
-@media screen and (orientation: portrait) and (min-height: 800px) {
+/* 
+* Pixel 2, Pixel 2 XL,, iphone 6/7/8, iphone 6/7/8 PLUS, iphone X
+*/
+@media screen and (orientation: portrait) and (min-height: 600px) and (min-width: 374px) {
   .video {
-      width: 100%;
-    }
+    width: 95%;
+  }
+  .video-box {
+    display: flex;
+    justify-content: center;
+  }
 }
 
-@media screen and (orientation: portrait) and (min-height: 800px) and (min-width: 400px) {
+/* 
+* iphone 6/7/8 PLUS
+*/
+/* @media screen and (orientation: portrait) and (min-height: 700px) and (min-width: 400px) {
   .video {
-      width: 100%;
-    }
-}
+    width: 95%;
+  }
+  .video-box {
+    display: flex;
+    justify-content: center;
+  }
+} */
 
-.video {
-  margin: .3rem;
-}
+/* 
+* iphone X
+*/
+/* @media screen and (orientation: portrait) and (min-height: 800px) and (min-width: 374px)  {
+  .video {
+    width: 95%;
+  }
+  .video-box {
+    display: flex;
+    justify-content: center;
+  }
+} */

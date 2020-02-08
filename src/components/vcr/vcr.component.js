@@ -4,13 +4,6 @@ import './vcr.css'
 import img1 from '../../assets/default_2.jpg'
 
 export default function VCR (props) {
-    const desktopVideo = <video className='video' src={props.currVideo} type="video/mp4" controls/>
-    const videoArray = (props.isMobile) ? makeMobileVideoArray(props.allVideos) : desktopVideo;
-
-    function makeMobileVideoArray (allVideos) {
-        return allVideos.map((video, index) => <Cassette key={index} video={video} />)
-    }
-
     return (
       <div className='home'>
         <div className='top'>
@@ -23,7 +16,7 @@ export default function VCR (props) {
           </div>
         </div>
         <div className="vcr">
-            {videoArray}
+          <Cassette video={props.currVideo} />
         </div>
       </div>
     );

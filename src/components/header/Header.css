@@ -6,6 +6,10 @@
   background-color: black !important;
 }
 
+.header-box {
+  height: auto;
+}
+
 .header {
   display: flex;
   flex-direction: row;
