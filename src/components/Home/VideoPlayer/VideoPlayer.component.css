@@ -44,6 +44,34 @@
 }
 
 /* 
+* iphone 5 landscape
+*/
+@media screen and (orientation: Landscape) and (max-height: 325px) and (max-width: 570px) {
+  .video {
+    width: 95%;
+  }
+  .video-box {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* 
+* Landscape 
+*
+* Pixel 2, Pixel 2 XL,, iphone 6/7/8, iphone 6/7/8 PLUS, iphone X
+*/
+@media screen and (orientation: Landscape) and (min-height: 300px) and (min-width: 600px) {
+  .video {
+    width: 95%;
+  }
+  .video-box {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* 
 * Pixel 2, Pixel 2 XL,, iphone 6/7/8, iphone 6/7/8 PLUS, iphone X
 */
 @media screen and (orientation: portrait) and (min-height: 600px) and (min-width: 374px) {

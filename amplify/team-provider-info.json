@@ -1,0 +1,20 @@
+{
+    "prod": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-vsp-serverless-prod-143626-authRole",
+            "UnauthRoleArn": "arn:aws:iam::427073849044:role/amplify-vsp-serverless-prod-143626-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::427073849044:role/amplify-vsp-serverless-prod-143626-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-vsp-serverless-prod-143626-deployment",
+            "UnauthRoleName": "amplify-vsp-serverless-prod-143626-unauthRole",
+            "StackName": "amplify-vsp-serverless-prod-143626",
+            "StackId": "arn:aws:cloudformation:us-east-1:427073849044:stack/amplify-vsp-serverless-prod-143626/36d7d140-59a9-11ea-ae24-0e765a9edd1f",
+            "AmplifyAppId": "d1j682xwh83dax"
+        },
+        "categories": {
+            "auth": {
+                "cognito7f72089c": {}
+            }
+        }
+    }
+}

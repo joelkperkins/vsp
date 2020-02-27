@@ -1,0 +1,40 @@
+{
+    "paths": [
+        {
+            "name": "/items",
+            "lambdaFunction": "sendSMS",
+            "privacy": {
+                "protected": true,
+                "auth": [
+                    "/POST"
+                ],
+                "unauth": [
+                    "/POST"
+                ]
+            }
+        }
+    ],
+    "resourceName": "twilio",
+    "apiName": "twilio",
+    "functionArns": [
+        {
+            "lambdaFunction": "sendSMS"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 1,
+        "authRoleName": "amplify-vsp-serverless-prod-143626-authRole",
+        "unAuthRoleName": "amplify-vsp-serverless-prod-143626-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "sendSMS",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

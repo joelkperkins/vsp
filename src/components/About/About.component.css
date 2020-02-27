@@ -44,6 +44,51 @@
 }
 
 /* 
+* iphone 5 landscape
+*/
+@media screen and (orientation: Landscape) and (max-height: 325px) and (max-width: 570px) {
+  .about-img {
+    width: 9rem;
+    border-radius: 0% 50% 0% 50%;
+    margin: auto .3rem;
+    padding-right: .5rem;
+  }
+  .about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    padding-top: 1.5rem;
+  }
+  
+  .top-box {
+    width: 95%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .bot-box {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .name {
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* 
 * Galaxy S5
 */
 @media screen and (orientation: portrait) and (min-height: 600px) and (max-width: 360px) {
@@ -126,5 +171,99 @@
     color: white;
     display: flex;
     flex-direction: column;
+  }
+}
+
+/* 
+* Landscape 
+*
+* Pixel 2, Pixel 2 XL,, iphone 6/7/8, iphone 6/7/8 PLUS, iphone X, Galaxy S5
+*/
+@media screen and (orientation: Landscape) and (min-height: 300px) and (min-width: 600px) {
+  .about-img {
+    width: 13rem;
+    border-radius: 0% 50% 0% 50%;
+    margin: auto .3rem;
+    padding-right: .5rem;
+  }
+  .about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .top-box {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .bot-box {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .name {
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+}
+
+/* 
+* portrait 
+*
+* ipad
+*/
+@media screen and (orientation: Portrait) and (min-height: 1020px) and (min-width: 760px) {
+  .about-img {
+    width: 18rem;
+    border-radius: 0% 50% 0% 50%;
+    margin: auto .3rem;
+    padding-right: .5rem;
+  }
+  .about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .top-box {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .bot-box {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .name {
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
   }
 }

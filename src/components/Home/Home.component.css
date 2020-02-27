@@ -1,54 +1,84 @@
-
-@media screen and (orientation: landscape) {
-    .vcr {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: black;
-        overflow: hidden;
-    }
-}
-
 /* 
-* Pixel 2, Pixel 2 XL,, iphone 6/7/8, iphone 6/7/8 PLUS, iphone X
+* portrait 
+*
+* ipad
 */
-@media screen and (orientation: portrait) and (min-height: 600px) and (min-width: 374px) {
+@media screen and (orientation: Portrait) and (min-height: 1020px) and (min-width: 760px) {
   .home {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+  }
+
+  .vcr {
+    width: auto;
+    max-height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    margin: .5rem auto;
+  }
+}
+
+
+
+/* 
+* Landscape 
+*
+* Pixel 2, Pixel 2 XL,, iphone 6/7/8, iphone 6/7/8 PLUS, iphone X
+*/
+@media screen and (orientation: Landscape) and (min-height: 300px) and (min-width: 600px) {
+  .home {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     height: 100%;
   }
-  .top {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .side-text-box {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center !important;
-    font-family: 'Titillium Web', sans-serif;
-    color: white;
-    padding-right: .5rem;
-  }
 
-  .img-1 {
-    margin: auto .3rem;
-    width: 13rem;
-    border-radius: 50% 0% 50% 0%;
-    padding-left: .5rem;
-  }
   .vcr {
     width: auto;
     max-height: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    background-color: black;
+    margin: .5rem auto;
+  }
+}
+
+/* 
+* Landscape 
+*
+* Pixel 2, Pixel 2 XL,, iphone 6/7/8, iphone 6/7/8 PLUS, iphone X
+*/
+@media screen and (orientation: Landscape) and (min-height: 375px) and (min-width: 800px) {
+  .home {
+    padding-top: 1.3rem;
+  }
+}
+
+/* 
+* Portrait 
+*
+* Pixel 2, Pixel 2 XL,, iphone 6/7/8, iphone 6/7/8 PLUS, iphone X
+*/
+@media screen and (orientation: portrait) and (max-height: 900px) and (min-height: 600px) and (min-width: 374px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 98%;
+  }
+
+  .vcr {
+    width: auto;
+    max-height: auto;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     background-color: black;
     margin: .5rem auto;
@@ -68,28 +98,31 @@
     overflow: scroll;
     padding-top: 7rem;
   }
-  .top {
+
+  .vcr {
+    width: auto;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    margin: .5rem auto;
+  }
+}
+/* 
+* iphone 5 landscape
+*/
+@media screen and (orientation: Landscape) and (max-height: 325px) and (max-width: 570px) {
+  .home {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-  }
-  .img-1 {
-    margin: auto .3rem;
-    width: 11rem;
-    border-radius: 50% 0% 50% 0%;
-    padding-left: .5rem;
-  }
-  .side-text-box {
+    justify-content: space-evenly;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center !important;
-    font-family: 'Titillium Web', sans-serif;
-    color: white;
-    padding-right: .5rem;
+    overflow: scroll;
+    padding-top: 1.5rem;
   }
+
   .vcr {
     width: auto;
     max-height: auto;
@@ -112,28 +145,7 @@
     justify-content: space-evenly;
     height: 100%;
   }
-  .top {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .img-1 {
-    margin: auto .3rem;
-    width: 11rem;
-    border-radius: 50% 0% 50% 0%;
-    padding-left: .5rem;
-  }
-  .side-text-box {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center !important;
-    font-family: 'Titillium Web', sans-serif;
-    color: white;
-    padding-right: .5rem;
-  }
+
   .vcr {
     width: auto;
     max-height: auto;

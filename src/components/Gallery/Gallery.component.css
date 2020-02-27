@@ -1,7 +1,7 @@
 /* 
 * Pixel 2, Pixel 2 XL,, iphone 6/7/8, iphone 6/7/8 PLUS, iphone X
 */
-@media screen and (orientation: portrait) and (min-height: 600px) and (min-width: 374px) {
+@media screen and (orientation: portrait) and (min-height: 600px) and (max-height: 900px) and (min-width: 374px) {
   .dashboard {
       display: flex;
       flex-direction: column;
@@ -26,6 +26,37 @@
 }
 
 /* 
+* Landscape 
+*
+* Pixel 2, Pixel 2 XL,, iphone 6/7/8, iphone 6/7/8 PLUS, iphone X, Galaxy S5
+*/
+@media screen and (orientation: Landscape) and (min-height: 300px) and (min-width: 600px) {
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: scroll;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  max-height: 15rem;
+}
+
+.g1 {
+  width: 15rem;
+  margin: .5rem;
+  border-radius: 5%;
+}
+}
+
+/* 
 * iphone 5
 */
 @media screen and (orientation: portrait) and (max-height: 600px) and (max-width: 360px){
@@ -41,6 +72,31 @@
   }
   .g1 {
     width: 10rem;
+    margin: .5rem;
+    border-radius: 5%;
+  }
+}
+
+/* 
+* iphone 5 landscape
+*/
+@media screen and (orientation: Landscape) and (max-height: 325px) and (max-width: 570px) {
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    overflow: scroll;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    width: 100%;
+  }
+  .g1 {
+    width: 15rem;
     margin: .5rem;
     border-radius: 5%;
   }
@@ -71,4 +127,32 @@
   margin: .5rem;
   border-radius: 5%;
 }
+}
+
+/* 
+* portrait 
+*
+* ipad
+*/
+@media screen and (orientation: Portrait) and (min-height: 1020px) and (min-width: 760px) {
+  .dashboard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: scroll;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    max-height: 15rem;
+  }
+
+  .g1 {
+    width: 18rem;
+    margin: .5rem;
+    border-radius: 5%;
+  }
 }

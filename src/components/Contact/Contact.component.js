@@ -1,15 +1,26 @@
 import React, { useState } from 'react'
-import profileImg from '../../assets/default.png'
-import Form from 'react-bootstrap/Form';
+import Services from '../Services/Services.component'
+import EventsModal from '../../Modals/Events.modals'
+import ContactForm from '../../Forms/Contact.form'
+import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+
+import profileImg from '../../assets/default.png'
 
 
 import './Contact.component.css'
 
 
-export default function Contact() {
+export default function Contact(props) {
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   const [validated, setValidated] = useState(false);
+
+  const generateEmailForm = () => <ContactForm submit={(e) => handleSubmit(e)} validated={validated} />
 
   const handleSubmit = event => {
     const form = event.currentTarget;
@@ -22,30 +33,25 @@ export default function Contact() {
   };
   return (
     <div className='contact'>
-        <img className='contact-img' src={profileImg} alt=''/>
-        <p className='contact-text'>Lorem ipsum dolor sit amet.</p>
-        <Form style={{width: '20rem'}}validated={validated} onSubmit={handleSubmit}>
-          <Form.Row style={{margin: '.2rem'}}>
-            <Form.Control
-              required
-              type="text"
-              placeholder="Your name"
-            />
-          </Form.Row>
-          <Form.Row style={{margin: '.2rem'}}>
-            <Form.Control
-              required
-              type="email"
-              placeholder="Your @email"
-            />
-          </Form.Row>
-          <Form.Row style={{margin: '.2rem'}}>
-            <Form.Control required as="textarea" rows="5" placeholder="Your message..."/>
-          </Form.Row>
-          <Form.Row style={{margin: '.2rem'}}>
-            <Button block variant="primary" type="submit">Send</Button>
-          </Form.Row>
-        </Form>
+        <div className='contact-top'>
+          <img className='contact-img' src={profileImg} alt=''/>
+        </div>
+        <Card bg='light' text='dark' style={props.deviceCode === 1 ? { width: '18rem' } : {width: '75%'}}>
+          <Card.Body>
+            <div className='d-flex flex-column justify-content-center'>
+            <Card.Title>Book an Event with VSP!</Card.Title>
+            <Card.Subtitle className="mb-2 text-muted">Services offered include: </Card.Subtitle>
+            <Services deviceCode={props.deviceCode}/>
+            <Button onClick={() => handleShow()}>Contact Now</Button>
+            </div>
+          </Card.Body>
+        </Card>
+        <EventsModal 
+          handleClose={() => handleClose()} 
+          show={show} 
+          emailForm={() => generateEmailForm()}
+          title='Contact Today and Book an Amazing Show with VSP!'
+        />
     </div>
   )
 }

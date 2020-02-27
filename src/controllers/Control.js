@@ -10,6 +10,7 @@ import Contact from '../components/Contact/Contact.component'
 import Gallery from '../components/Gallery/Gallery.component'
 import Footer from '../components/Footer/Footer.component'
 
+import bannerImg1 from '../assets/default_2.jpg'
 
 import './Control.css';
 
@@ -29,9 +30,21 @@ class Control extends Component {
           const view = window.location.pathname
           return (view === '/') ? 'home' : view.slice(1)
         }
+        function getWindowDimensions() {
+          return {
+            x: window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
+            y: window.innerHeight || document.documentElement.clientHeight|| document.body.clientHeight
+          }
+        }
+        function deviceMap(window) {
+          const {x, y} = window
+          if (x >= 768 && y >= 1024) return 2 //not mobile
+          else return 1
+        }
         this.state = {
             isMobile: isMobile(),
             isPortait: orietationCheck(),
+            deviceCode: deviceMap(getWindowDimensions()),
             videos: [
               {
                 title: 'Lorem Ipsum',
@@ -47,6 +60,20 @@ class Control extends Component {
               }
             ],
             currView: initialView(),
+            home: {
+              banner: {
+                images: [
+                  bannerImg1,
+                  bannerImg1,
+                  bannerImg1,
+                  bannerImg1,
+                  bannerImg1,
+                  bannerImg1,
+                  bannerImg1,
+                  bannerImg1,
+                ]
+              }
+            }
 
         }
     }
@@ -69,6 +96,8 @@ class Control extends Component {
                 <Home 
                   isMobile={this.state.isMobile}
                   videos={this.state.videos}
+                  deviceCode={this.state.deviceCode}
+                  home={this.state.home}
                 />
               }/>
               <Route path='/info' render={ () => 
@@ -79,6 +108,7 @@ class Control extends Component {
               <Route path='/email' render={ () => 
                 <Contact 
                   isMobile={this.state.isMobile}
+                  deviceCode={this.state.deviceCode}
                 />
               }/>
               <Route path='/dashboard' render={ () => 

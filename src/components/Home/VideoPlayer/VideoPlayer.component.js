@@ -7,7 +7,7 @@ import './VideoPlayer.component.css'
 export default (props) => (
   <Tab.Container className='w-100' id="left-tabs-example" defaultActiveKey="first">
     <Row>
-      <Tabs className='w-95' defaultActiveKey='0' id="uncontrolled-tab-example">
+      <Tabs className='w-100 d-flex justify-content-center' defaultActiveKey='0' id="uncontrolled-tab-example">
       {
         props.videos.map((v, i) => (
           <Tab key={'tab' + i} eventKey={i} title={v.title}>
